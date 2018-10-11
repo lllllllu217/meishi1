@@ -1,0 +1,6 @@
+/**index.wxss**/
+.btn-choose{
+  width:100%;
+  background:#008B00;
+  color:#fff;
+}
