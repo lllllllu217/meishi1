@@ -1,6 +1,10 @@
 //index.js
 //获取应用实例
+const util = require('../../utils/util.js');
+//const upng = require('../../utils/upng.js')
+
 const app = getApp()
+
 
 Page({
   data: {
