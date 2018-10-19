@@ -1,0 +1,29 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <image src="{{imagePath}}" class="image-path" mode="widthFix"></image>
+  <!--<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{content}}">
+      <swiper-item>
+        <view>{{item.name}}</view>
+        <view>{{item.calorie}}</view>
+      </swiper-item>
+    </block>
+  </swiper>-->
+  <view class="high-possibility" style="display:{{isShow}}">
+    <view>你吃的是</view>
+    <span style="border:1px dotted red;border-radius:10rpx;display:inline-block;padding:5rpx 10rpx;margin:10rpx">{{contentMax}}</span>
+  </view> 
+  <view class="low-possibility" style="display:{{isShow}}">
+    <view>不对么？那是不是</view>
+    <ul wx:for="{{content}}" >
+      <li style="border:1px dotted #999;border-radius:10rpx;display:inline-block;padding:5rpx 10rpx;margin:10rpx 20rpx 10rpx 20rpx">{{item.name}}</li>
+    </ul>
+  </view>
+  
+
+
+</view> 
+<view style='position:fixed;top:999999999999999999999rpx'>
+    <canvas  canvas-id='myCanvas' style="width:{{imgWidth}};height:{{imgHeight}};"></canvas>
+  </view>   
+

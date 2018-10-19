@@ -1,11 +1,4 @@
 <!--index.wxml-->
-<view class='container'>
-  <view class='card_scanning_list_logo_box'>
-    <view class='card_scanning_logo'>
-      <canvas  canvas-id='myCanvas' style="width:690rpx; height:690rpx;"></canvas>
-    </view>
-    <button class='btn-choose' bindtap='takePhoto'>
-     {{buttonName}}
-    </button>
-  </view>
-</view>
+<image src='../../images/fetch.png' class="fetch" mode="aspectFit" style="width:100rpx;height:80rpx;margin:0 auto;display:block;position:fixed;top:50%;left:50%;margin-left:-50rpx;margin-top:-40rpx" bindtap='takePhoto'>
+</image>
+<view style='position:fixed;top:1000rpx'><canvas canvas-id='attendCanvasId' style="width:{{imageWidth}};height:{{imageHeight}}"></canvas></view>

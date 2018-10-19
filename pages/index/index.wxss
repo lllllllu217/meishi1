@@ -4,3 +4,15 @@
   background:#008B00;
   color:#fff;
 }
+.scroll-view-x { 
+ width: 300px; 
+ height: 100px; 
+ display: flex; 
+ overflow: scroll; 
+} 
+  
+.scroll-x-item { 
+ width: 95px; 
+ height: 100%; 
+ display: inline-table; 
+}
